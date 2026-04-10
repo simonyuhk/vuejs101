@@ -7,7 +7,9 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),
+    vue({
+      // reactivityTransform: false // 關閉響應式轉換
+    }),
     vueDevTools(),
   ],
   resolve: {
