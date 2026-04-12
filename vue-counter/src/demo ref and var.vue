@@ -13,7 +13,7 @@ function increase1() {
 }
 
 function increase2() {
-  reactiveCount.value++ // 畫面會更新
+  reactiveCount.value+=5 // 畫面會更新
 normalCount++        // 不會更新畫面
 }
 </script>
